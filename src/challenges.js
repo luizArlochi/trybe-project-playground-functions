@@ -2,6 +2,7 @@
 const compareTrue = (parametro1, parametro2) => parametro1 && parametro2;
 
 // Desafio 2 - Crie a função splitSentence
+const splitSentence = (frase) => frase.split(" ")
 
 // Desafio 3 - Crie a função concatName
 
