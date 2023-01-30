@@ -6,11 +6,11 @@ const splitSentence = (frase) => frase.split(' ');
 
 // Desafio 3 - Crie a função concatName
 
-const concatName = (arrayNames) => `${arrayNames[arrayNames.length -1]}, ${arrayNames[0]}`;
+const concatName = (arrayNames) => `${arrayNames[arrayNames.length - 1]}, ${arrayNames[0]}`;
 
 // Desafio 4 - Crie a função footballPoints
 
-function footballPoints (win,ties) {
+function footballPoints(win, ties) {
   win *= 3;
   ties *= 1;
   let score = win + ties;
@@ -18,6 +18,21 @@ function footballPoints (win,ties) {
 }
 
 // Desafio 5 - Crie a função highestCount
+
+function highestCount(array) {
+  let maior = Math.max(...array)
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] > maior) {
+      maior = array[index];
+    }
+  }
+  let repete = 0;
+  for (let index = 0; index < array.length; index += 1) {
+    if (maior === array[index]) {
+      repete += 1;
+    }
+  } return repete;
+}
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
