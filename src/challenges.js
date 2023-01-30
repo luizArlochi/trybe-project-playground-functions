@@ -10,6 +10,13 @@ const concatName = (arrayNames) => `${arrayNames[arrayNames.length -1]}, ${array
 
 // Desafio 4 - Crie a função footballPoints
 
+function footballPoints (win,ties) {
+  win *= 3;
+  ties *= 1;
+  let score = win + ties;
+  return score;
+}
+
 // Desafio 5 - Crie a função highestCount
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
