@@ -20,7 +20,7 @@ function footballPoints(win, ties) {
 // Desafio 5 - Crie a função highestCount
 
 function highestCount(array) {
-  let maior = Math.max(...array)
+  let maior = Math.max(...array);
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] > maior) {
       maior = array[index];
@@ -46,16 +46,27 @@ function calcRectangleArea(base, height) {
 
 function calcAllAreas(base, height, form) {
   switch (form) {
-    case "triângulo":
-      return `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}`;
-    case "retângulo":
-      return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
-    default:
-      return "Não foi possível fazer o cálculo, insira uma forma geométrica válida";
+  case 'triângulo':
+    return `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}`;
+  case 'retângulo':
+    return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
+  default:
+    return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
   }
 }
 
 // Desafio 7 - Crie a função catAndMouse
+
+function catAndMouse(mouse, cat1, cat2) {
+  const distanceCat1 = Math.abs(mouse - cat1);
+  const distanceCat2 = Math.abs(mouse - cat2);
+  if (distanceCat1 < distanceCat2) {
+    return 'cat1';
+  } if (distanceCat1 > distanceCat2) {
+    return 'cat2';
+  }
+  return 'os gatos trombam e o rato foge';
+}
 
 // Desafio 8 - Crie a função fizzBuzz
 
