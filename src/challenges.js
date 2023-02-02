@@ -126,6 +126,17 @@ function decode(phrase) {
 
 // Desafio 10 - Crie a função techList
 
+const techList = (array, string) => {
+  if (!array || !string) return [];
+
+  return array
+    .sort()
+    .map(tech => ({
+      tech,
+      name: string,
+    }));
+};
+
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
